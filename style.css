@@ -1,0 +1,661 @@
+body{
+  background-color:white;
+}
+.nav{
+    background-color: white ;
+    z-index: 9;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 3px 65px 0px rgba(0, 0,0, 1);
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+}  
+.nav_side{
+    float: right;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+.main{
+    background: url("photo-1607082348824-0a96f2a4b9da.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.main .main_content{
+    padding-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+
+}
+.main .main_content h2{
+    color: white;
+    font-size: 80px;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    line-height: 25px;
+}
+.main .main_content span{
+    font-family: cosmic,sans-serif;
+    font-size: 12px;
+    color: #DD3531;
+    font-weight: 50px;
+    line-height: 40px;
+}
+.nav_side a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family:cosmic, sans-serif;
+    font-size: 15px;
+}
+
+.nav_side a:hover{
+    color: #DD3531 ;
+    text-decoration: underline 3px black;
+    transition: all 0.5s ease;
+}
+
+.main .main_content .btn{
+   margin-top: 50px;
+}
+
+.main .main_content .btn a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.main .main_content .btn a:hover{
+    background-color: #DD3531 ;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    
+}
+.product{
+    padding-bottom: 100px;
+}
+.product h2{
+    color: black;
+    font-size: 35px;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.product .product_container{
+    display:flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.product .product_container .item{
+    width: 400px;
+    margin: 10px;
+    height: auto;
+}
+
+.product .product_container .item:hover{
+    box-shadow: 0px 0px 20px 0px gray;
+}
+.product .product_container .item .item_img{
+    width: 100% ;
+    height: 250px;
+    overflow: hidden;
+}
+
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 250px;
+}
+
+.product .product_container .item .item_content{
+    text-align: center;
+}
+
+.product .product_container .item .item_content h3{
+    padding: 2px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.product .product_container .item .item_content p{
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.product .product_container .item .item_content a:hover{
+    background-color: #DD3531 ;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    
+}
+
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product .product_btn a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.product .product_btn a:hover{
+    background-color: #DD3531 ;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    
+}
+
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+.keypoint .key_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float:left;
+}
+
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #DD3531;
+    border-top: 2px solid black;
+    color: black;
+    text-align: left;
+    font-family: cosmic, sans-serif;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,0.15);
+}
+
+.keypoint .key_container .key_img{
+    width: 200px;
+    float: right;
+    padding: 20px;
+    background-color: white;
+
+    
+}
+
+.keypoint .key_container .key_img img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.keypoint .key_container .key_img P{
+  font-family: cosmic, sans-serif;
+  padding: 10px;   
+}
+
+.test{
+    padding: 50px;
+}
+.test h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+
+.test .test_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.test .test_container .item{
+    width:100%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.test .test_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+.test .test_container .item .item_img{
+    width: 100% ;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.test .test_container .item .item_img img{
+    width: 300px;
+    height: 100px;
+    
+}
+
+.test .test_container .item .item_content{
+    text-align: center;
+}
+
+.test .test_container .item .item_content h3{
+    padding: 2px;
+    font-size: 25px;
+    font-family: cosmic, sans-serif;
+}
+.test .test_container .item .item_content p{
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+.team{
+    padding: 50px;
+}
+
+.team h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+
+.team .team_container{
+    display: flex;
+}
+
+.team .team_container .team_video{
+    width:50%;
+    padding: 20px;
+}
+
+.team .team_container .team_video iframe{
+   width: 100%;
+   border: 10px solid #DD3531;
+   outline: none;
+}
+
+.team .team_container .team_content{
+    width:40%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+.feed{
+    padding: 10px;
+    background-image: url("istockphoto-1330790969-612x612.jpg");
+    background-size: cover;
+}
+
+.feed h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+
+.feed .feed_form{
+    text-align: center;
+}
+
+.feed .feed_form form{
+    padding: 20px;
+}
+
+.feed .feed_form form input{
+  width: 30%;
+  margin: 10px;
+  padding: 8px;
+  outline: none;
+  border: none;
+}
+.feed .feed_form form textarea{
+  width: 30%;
+  margin: 10px;
+  padding: 8px;
+  outline: none;
+  border: none;
+}
+.feed .feed_form form button{
+  
+  text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.feed .feed_form form button:hover{
+    background-color: #DD3531 ;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    
+}
+
+.about_us{
+    padding: 100px;
+}
+
+.about_us h2{
+    color: #DD3531;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+
+.about_us p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    line-height: 20px;
+}
+
+.contact_container{
+    padding: 100px;
+}
+
+.contact_container h2{
+    color: #DD3531;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+    font-family: cosmic, sans-serif;
+     text-transform: uppercase;
+}
+
+.contact_container .g_map{
+    border: solid 10px black;
+}
+
+.contact_container .contact_content{
+    padding: 20px;
+}
+
+.contact_container .contact_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+    line-height: 20px;
+}
+
+footer{
+    background-color: whitesmoke;
+    padding: 50px;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color:black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: #DD3531;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+footer .pages a:hover{
+    color: black;
+}
+
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color:black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: #DD3531;
+    font-size: 15px;
+    font-family: cosmic, sans-serif;
+}
+
+footer .doc a:hover{
+    color: black;
+}
+
+footer .social{
+    text-align: center;
+}
+footer .social h3{
+    color:black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+
+footer .social a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #DD3531;
+    margin: 10px;
+}
+
+footer .social a:hover{
+    color: black;
+}
+
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color:black;
+    font-size: 20px;
+    font-family: cosmic, sans-serif;
+    padding: 5px;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #DD3531;
+    margin: 10px;
+}
+
+footer .contact a:hover{
+    color: black;
+    
+}
+ footer p{
+    text-align: center;
+ }
+
+ 
+
+ .register{
+    background: url("photo-1607082348824-0a96f2a4b9da.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.register .register_content{
+    padding-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+
+}
+.register .register_content h2{
+    color: white;
+    font-size: 80px;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    line-height: 25px;
+}
+.register .register_content span{
+    font-family: cosmic,sans-serif;
+    font-size: 12px;
+    color: #DD3531;
+    font-weight: 50px;
+    line-height: 40px;
+}
+
+.register .register_content .register_form{
+    text-align: center;
+}
+
+ .register .register_content .register_form {
+    padding: 20px;
+}
+
+.register .register_content .register_form input{
+  width: 30%;
+  margin: 10px;
+  padding: 8px;
+  outline: none;
+  border: none;
+}
+
+.register .register_content .register_form button{
+  
+  text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: cosmic, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.register .register_content .register_form button:hover{
+    background-color: #DD3531 ;
+    color: black;
+    border: none;
+    border-bottom: 4px solid black;
+    transition: 0.5s;
+    
+}
+
+.blog {
+    padding: 100px;
+    margin-top: 100px;
+}
+
+.blog .blog_heading{
+    text-align: center;
+}
+
+.blog .blog_heading h2{
+    color: black;
+    font-size: 80px;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    line-height: 25px;
+    
+}
+.blog .blog_heading span{
+    font-family: cosmic,sans-serif;
+    font-size: 15px;
+    color: #DD3531;
+    font-weight: 50px;
+    line-height: 40px;
+}
+
+.blog .media{
+    margin-top: 50px;
+}
+
+.blog .media .media-body h4{
+    color: black;
+    font-size: 25px;
+    font-family: cosmic,sans-serif;
+    font-weight: bolder;
+    line-height: 25px;
+}

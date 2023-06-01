@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Register</title>
+    
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    
+     <nav class="nav nav_top">
+         <div class="logo">
+            <a href="index.html">
+             <img src="75-759411_clip-art-shop-logo-transparent-shop-logo-png-removebg-preview.png" width="150">
+            </a>
+         </div>
+         <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+         </div>
+     </nav>
+
+     <div class="register">
+        <div class="register_content">
+            <h2>Register</h2><br>
+            <span> Shop Online from hundreds of brands and get what you want!!</span>
+             <div class="register_form">
+                <form name="submit-googlesheet-register" method="post">
+                  <input type="text" name="Name" placeholder="Name"><br>
+                  <input type="email" name="Email" placeholder="Email ID"><br>
+                  <input type="number" name="Number" placeholder="Contact Number"><br>
+                  <button type="submit">Submit</button>
+                  <a href="index.html">
+                  <button type="button">Continue</button></a>
+                </form>
+            </div>
+            
+        </div>
+     </div>
+
+
+    
+        <hr>
+        <footer>
+          <div class="footer_logo">
+            <a href="index.html">
+             <img src="75-759411_clip-art-shop-logo-transparent-shop-logo-png-removebg-preview.png" width="200">
+            </a>
+         </div>
+          <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="login.html">Login</a>
+          </div>
+          <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy</a>
+          </div>
+          <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/myntra/" target="_blank">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://in.linkedin.com/company/myntra" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/myntra/?hl=en" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/myntra?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://wa.me/+919315997902" target="_blank">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="tel: +919315997902">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </a>
+            <a href="mailto: vani140103@gmail.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+          <hr>
+          <p>Copyright &copy; 2021 Visa. All rights reserved</p>
+        </footer>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzlqTPWsUsC4RM1oKPF8v_p8m06DZKgVkDB0xIbWDRP9RgzgItFj7uW67otNdne-oR8/exec'
+            const form = document.forms['submit-googlesheet-register']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thank You for Registering. Happy Shopping!!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+
+         <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    </body>
+</html>
